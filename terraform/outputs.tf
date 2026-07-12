@@ -1,3 +1,3 @@
-output "message" {
-  value = "Terraform three-tier infrastructure scaffold"
+output "vpc_id" {
+  value = module.vpc.vpc_id
 }
