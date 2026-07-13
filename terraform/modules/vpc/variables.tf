@@ -11,7 +11,16 @@ variable "vpc_cidr" {
 }
 
 variable "enable_internet_gateway" {
-  description = "Create Internet Gateway"
-  type        = bool
-  default     = true
+  type    = bool
+  default = true
+}
+
+variable "availability_zones" {
+  description = "Availability Zones"
+  type        = list(string)
+}
+
+variable "public_subnet_cidrs" {
+  description = "Public subnet CIDRs"
+  type        = list(string)
 }
